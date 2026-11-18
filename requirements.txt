@@ -1,0 +1,10 @@
+# El punto 2 usa SOLO la biblioteca estándar de Python (3.9+): no hay nada que instalar.
+
+# Punto 3 (se instalan en la EC2):
+boto3        # subir archivos a S3
+pymysql      # leer la tabla de RDS MariaDB
+
+# Punto 8:
+streamlit    # aplicación web (en la EC2); trae pandas
+requests     # consumir la API de API Gateway (Streamlit y graficos.py)
+matplotlib   # gráficos estáticos (graficos.py, en tu computador)

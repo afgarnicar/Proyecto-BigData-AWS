@@ -1,0 +1,24 @@
+# Secretos y configuración local
+.env
+*.pem
+*.ppk
+credentials
+.aws/
+
+# Datos descargados (pesados, se regeneran con 02_fuentes/scripts/descargar_snapshot.py)
+02_fuentes/data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+.kiro/
