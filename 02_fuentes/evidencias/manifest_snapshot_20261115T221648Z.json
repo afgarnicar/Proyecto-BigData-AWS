@@ -1,0 +1,88 @@
+{
+  "snapshot_id": "snapshot_20261115T221648Z",
+  "started_at_utc": "2026-11-15T22:16:48.607714+00:00",
+  "finished_at_utc": "2026-11-15T22:17:37.682079+00:00",
+  "dataset": {
+    "id": "6jmc-vaxk",
+    "name": "VEHICULOS INVOLUCRADOS EN UN ACCIDENTE DE TRANSITO LEY 2251-2022",
+    "resource_url": "https://www.datos.gov.co/resource/6jmc-vaxk.json",
+    "rows_updated_at_unix": 1788553269,
+    "rows_updated_at_utc": "2026-09-04T20:21:09+00:00",
+    "column_types": {
+      "marca_vehiculo": "text",
+      "modelo_vehiculo": "number",
+      "tipo_vehiculo": "text",
+      "edad_vehiculo": "number",
+      "fecha_accidente": "text",
+      "gravedad_accidente": "text",
+      "departamento_accidente": "text",
+      "municipio_accidente": "text",
+      "autoridad_de_transito": "text"
+    }
+  },
+  "unit_of_observation": "una fila = un vehículo involucrado en un siniestro vial (NO un accidente)",
+  "pagination": {
+    "order_by": ":id",
+    "page_size": 50000
+  },
+  "source_filters_soql": {
+    "rds_antioquia": "departamento_accidente = 'ANTIOQUIA'",
+    "ec2_bogota": "departamento_accidente = 'BOGOTA D.C.'",
+    "url_resto": "departamento_accidente NOT IN ('ANTIOQUIA', 'BOGOTA D.C.') OR departamento_accidente IS NULL"
+  },
+  "server_counts_before": {
+    "total": 450335,
+    "rds_antioquia": 175618,
+    "ec2_bogota": 62990,
+    "url_resto": 211727
+  },
+  "server_counts_after": {
+    "total": 450335,
+    "rds_antioquia": 175618,
+    "ec2_bogota": 62990,
+    "url_resto": 211727
+  },
+  "local_counts": {
+    "rds_antioquia": 175618,
+    "ec2_bogota": 62990,
+    "url_resto": 211727
+  },
+  "null_counts": {
+    "marca_vehiculo": 0,
+    "modelo_vehiculo": 0,
+    "tipo_vehiculo": 0,
+    "edad_vehiculo": 20,
+    "fecha_accidente": 0,
+    "gravedad_accidente": 0,
+    "departamento_accidente": 0,
+    "municipio_accidente": 0,
+    "autoridad_de_transito": 0
+  },
+  "unexpected_fields": [],
+  "files": {
+    "rds_antioquia": {
+      "file": "fuente_rds_antioquia.csv",
+      "data_rows": 175618,
+      "bytes": 19241758,
+      "sha256": "264682145a5e14d0c697245e5dc12af541dc26c5bf2c637446363e003e06d7d7"
+    },
+    "ec2_bogota": {
+      "file": "fuente_ec2_bogota.csv",
+      "data_rows": 62990,
+      "bytes": 7975133,
+      "sha256": "988074497c05ef7cd30ca789ee2e9e09f8a0722256abdbb30409f955439e0362"
+    }
+  },
+  "checks": {
+    "columns_match_expected": true,
+    "no_unexpected_fields": true,
+    "dataset_not_updated_during_download": true,
+    "downloaded_equals_server_total": true,
+    "row_ids_unique_no_page_overlap": true,
+    "sources_sum_equals_total": true,
+    "rds_count_matches_server": true,
+    "ec2_count_matches_server": true,
+    "url_count_matches_server": true
+  },
+  "all_checks_passed": true
+}

@@ -1,0 +1,24 @@
++-------------+
+| total_filas |
++-------------+
+|      175618 |
++-------------+
++------------------------+--------+
+| departamento_accidente | filas  |
++------------------------+--------+
+| ANTIOQUIA              | 175618 |
++------------------------+--------+
++-----------+-----------+-------------+
+| edad_null | edad_cero | modelo_null |
++-----------+-----------+-------------+
+|         5 |       251 |           0 |
++-----------+-----------+-------------+
++--------------------+----------------+-----------------+---------------+---------------+-----------------+--------------------+------------------------+---------------------+---------------------------+
+| socrata_row_id     | marca_vehiculo | modelo_vehiculo | tipo_vehiculo | edad_vehiculo | fecha_accidente | gravedad_accidente | departamento_accidente | municipio_accidente | autoridad_de_transito     |
++--------------------+----------------+-----------------+---------------+---------------+-----------------+--------------------+------------------------+---------------------+---------------------------+
+| row-222p.zesd~4f5h | YAMAHA         |            2024 | MOTOCICLETA   |             3 | 04/2024         | CON HERIDOS        | ANTIOQUIA              | MEDELLIN            | STRIA DE TTOyTTE MEDELLIN |
+| row-222r_sh7a~tjwn | TOYOTA         |            2013 | CAMPERO       |            14 | 12/2022         | CON HERIDOS        | ANTIOQUIA              | BELLO               | STRIA TTEyTTO BELLO       |
+| row-222t_7pwv.bkvd | YAMAHA         |            2021 | MOTOCICLETA   |             6 | 12/2023         | CON HERIDOS        | ANTIOQUIA              | MEDELLIN            | STRIA DE TTOyTTE MEDELLIN |
+| row-222y_wb97_vbvg | KIA            |            2011 | AUTOMOVIL     |            15 | 07/2024         | CON HERIDOS        | ANTIOQUIA              | MEDELLIN            | STRIA DE TTOyTTE MEDELLIN |
+| row-2237.2ia4.bf95 | YAMAHA         |            2019 | MOTOCICLETA   |             8 | 12/2025         | CON HERIDOS        | ANTIOQUIA              | BELLO               | STRIA TTEyTTO BELLO       |
++--------------------+----------------+-----------------+---------------+---------------+-----------------+--------------------+------------------------+---------------------+---------------------------+
